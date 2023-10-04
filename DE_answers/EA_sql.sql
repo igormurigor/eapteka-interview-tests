@@ -8,7 +8,6 @@ case
 end 	
 as  is_last_operation from public.sales s2 
 
-
 -- SQL 2
 -- DQ метрики
 -- 1. Формат даты
