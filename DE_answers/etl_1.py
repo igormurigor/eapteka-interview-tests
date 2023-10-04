@@ -12,7 +12,7 @@ host = os.environ.get("EA_HOST")
 port = os.environ.get("EA_PORT")
 commit_interval = 10
 table_name = "sales"
-csv_file = "/Users/pro/Studing/EAtest/sales.csv"
+csv_file = "/DE/csv/sales.csv"
 
 # Connection to the PostgreSQL database
 try:
