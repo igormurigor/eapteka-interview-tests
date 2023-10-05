@@ -1,5 +1,5 @@
 import os
-import psycopg2-binary
+import psycopg2
 import boto3
 from io import BytesIO
 from dotenv import load_dotenv
