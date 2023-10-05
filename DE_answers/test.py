@@ -1,5 +1,4 @@
 import pytest
-from etl_2 import connect_to_postgres
 from etl_2 import count_rows
 
 
