@@ -1,14 +1,19 @@
 import os
 import psycopg2
+import pandas as pd
 import boto3
 from io import BytesIO
 from dotenv import load_dotenv
 load_dotenv()
 
+csv_file = "../DE/csv/sales.csv"
+
 
 # Test function
-def count_rows(a, b):
-    return a + b
+def check_csv_row_count(file_path):
+    df = pd.read_csv(file_path)
+    current_row_count = len(df)
+    return current_row_count
 
 
 def connect_to_postgres(db_params):
