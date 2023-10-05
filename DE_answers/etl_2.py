@@ -6,6 +6,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def count_rows(a, b):
+    return a + b
+
+
 def connect_to_postgres(db_params):
     try:
         conn = psycopg2.connect(**db_params)
@@ -50,7 +54,7 @@ def main():
 
     # S3 parameters
     s3_bucket = 'bucketeas3test'
-    s3_key = 'output4.csv'
+    s3_key = 'output.csv'
     aws_access_key_id = os.environ.get("aws_access_key_id")
     aws_secret_access_key = os.environ.get("aws_secret_access_key")
     endpoint_url = 'https://storage.yandexcloud.net'
