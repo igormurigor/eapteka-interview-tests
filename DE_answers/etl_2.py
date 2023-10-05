@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+# Test function
 def count_rows(a, b):
     return a + b
 
