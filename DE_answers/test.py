@@ -1,5 +1,7 @@
 import pytest
-from etl_2 import check_csv_row_count, csv_file
+from etl_2 import check_csv_row_count
+
+csv_file = "DE/csv/sales.csv"
 
 
 def test_check_csv_row_count():
